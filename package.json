@@ -1,0 +1,36 @@
+{
+  "name": "zhijiezh-personal-website",
+  "version": "1.0.0",
+  "description": "SI579 - Final Project - Zhijie Zhao's Personal Website / Portfolio",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhijiezh/Personal-Website.git"
+  },
+  "keywords": [],
+  "author": "Zhijie Zhao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhijiezh/Personal-Website/issues"
+  },
+  "homepage": "https://github.com/zhijiezh/Personal-Website#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^1.7.2",
+    "@emotion/react": "^11.7.0",
+    "@emotion/styled": "^11.6.0",
+    "framer-motion": "^5.4.5",
+    "next": "^12.0.7",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "eslint-config-next": "^12.0.7",
+    "prettier": "^2.5.1"
+  }
+}
