@@ -1,4 +1,16 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import NextLink from 'next/link'
+import {
+  Container,
+  Box,
+  Heading,
+  Image,
+  Link,
+  Button,
+  useColorModeValue
+} from '@chakra-ui/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Section from '../components/section'
+import Paragraph from '../components/paragraph'
 
 const Page = () => {
   return (
@@ -37,6 +49,28 @@ const Page = () => {
           />
         </Box>
       </Box>
+      <Section delay={0.1}>
+        <Heading as="h3" variant="section-title">
+          Work
+        </Heading>
+        <Paragraph>
+          In its "Vision 2010" Strategy, Philips emphasizes that it is a
+          "people-centric company" that strives to consistently deliver their
+          brand of "sense and simplicity" products, improving the quality of
+          life through meaningful innovations.{' '}
+          <NextLink href="/works/wishlist">
+            <Link>Wishlist</Link>
+          </NextLink>
+          .
+        </Paragraph>
+        <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My portfolio
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
     </Container>
   )
 }
