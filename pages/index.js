@@ -11,6 +11,7 @@ import {
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
   return (
@@ -49,6 +50,7 @@ const Page = () => {
           />
         </Box>
       </Box>
+
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
           Work
@@ -70,6 +72,34 @@ const Page = () => {
             </Button>
           </NextLink>
         </Box>
+      </Section>
+
+      <Section delay={0.2}>
+        <Heading as="h3" variant="section-title">
+          Bio
+        </Heading>
+        <BioSection>
+          <BioYear>1999&emsp;&#32;</BioYear>
+          Born in Shanghai (上海), China.
+        </BioSection>
+        <BioSection>
+          <BioYear>2021&emsp;&#32;</BioYear>
+          Completed the Bachelor&apos;s Degree in Electrical and Computer Engineering in the University of Michigan - Shanghai Jiao Tong University Joint Institute.
+          (上海交通大学密西根学院)
+        </BioSection>
+        <BioSection>
+          <BioYear>present</BioYear>
+          Studying UX/HCI at School of Information, University of Michigan.
+        </BioSection>
+      </Section>
+
+      <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          I ♥
+        </Heading>
+        <Paragraph>
+          Jogging, Photography, Movies and Overwatch.
+        </Paragraph>
       </Section>
     </Container>
   )
