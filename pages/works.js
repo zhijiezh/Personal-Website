@@ -1,9 +1,10 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
-import { GridItem } from '../components/grid-item'
+import { GridItem, WorkGridItem } from '../components/grid-item'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 
 import thumbTicTacToe from '../public/images/works/tic-tac-toe.png'
+import thumbHumanKind from '../public/images/works/HumanKind.png'
 
 const Works = () => {
   return (
@@ -24,14 +25,13 @@ const Works = () => {
             </GridItem>
           </Section>
           <Section>
-            <GridItem
-              id="tic-tac-toe"
-              href="https://codepen.io/zhijiezh/full/mdOgjGm"
-              title="React tic-tac-toe"
-              thumbnail={thumbTicTacToe}
+            <WorkGridItem
+              id="HumanKind"
+              title="HumanKind"
+              thumbnail={thumbHumanKind}
             >
-              The react official tutorial
-            </GridItem>
+              A donation platform that facilitates smaller, direct donations to neighbors in need. 
+            </WorkGridItem>
           </Section>
           <Section>
             <GridItem
