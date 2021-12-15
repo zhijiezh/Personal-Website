@@ -6,13 +6,19 @@ import {
   Image,
   Link,
   Button,
-  useColorModeValue
+  useColorModeValue,
+  List,
+  ListItem,
+  Icon,
+  SimpleGrid
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
+import { GridItem } from '../components/grid-item'
 
 const Page = () => {
   return (
@@ -102,6 +108,44 @@ const Page = () => {
           </Heading>
           <Paragraph>Jogging, Photography, Movies and Overwatch.</Paragraph>
         </Section>
+
+        <Section delay={0.3}>
+        <Heading as="h3" variant="section-title">
+          On the web
+        </Heading>
+        <List>
+          <ListItem>
+            <Link href="https://github.com/zhijiezh" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoGithub} />}
+              >
+                @zhijiezh
+              </Button>
+            </Link>
+          </ListItem>
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/zhijie-zhao-4bb2b81b4/" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<Icon as={IoLogoLinkedin} />}
+              >
+                Zhijie Zhao
+              </Button>
+            </Link>
+          </ListItem>
+        </List>
+
+        <Box align="center" my={4}>
+          <NextLink href="/works">
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              My Works
+            </Button>
+          </NextLink>
+        </Box>
+      </Section>
       </Container>
     </Layout>
   )
