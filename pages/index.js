@@ -62,16 +62,13 @@ const Page = () => {
         </Box>
 
         <Section delay={0.1}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" fontSize={20} variant="section-title">
             Work
           </Heading>
           <Paragraph>
-            In its "Vision 2010" Strategy, Philips emphasizes that it is a
-            "people-centric company" that strives to consistently deliver their
-            brand of "sense and simplicity" products, improving the quality of
-            life through meaningful innovations.{' '}
-            <NextLink href="/works/wishlist">
-              <Link>Wishlist</Link>
+            Hello, I am Zhijie Zhao, currently a student in School of Information, University of Michigan. My major is User-centered agile software development. I am learning user experience (UX) design as well as front-end development. I came from Shanghai, China. I love life and Teddy bears. Hear is one of my recent design works.{' '}
+            <NextLink href="/works/HumanKind">
+              <Link>HumanKind</Link>
             </NextLink>
             .
           </Paragraph>
@@ -85,7 +82,7 @@ const Page = () => {
         </Section>
 
         <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" fontSize={20}  variant="section-title">
             Bio
           </Heading>
           <BioSection>
@@ -105,14 +102,14 @@ const Page = () => {
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" fontSize={20}  variant="section-title">
             I ♥
           </Heading>
-          <Paragraph>Jogging, Photography, Movies and Overwatch.</Paragraph>
+          <Paragraph>Jogging, Photography, Movies, Overwatch and Teddy bears.</Paragraph>
         </Section>
 
         <Section delay={0.3}>
-          <Heading as="h3" variant="section-title">
+          <Heading as="h3" fontSize={20}  variant="section-title">
             On the web
           </Heading>
           <List>
