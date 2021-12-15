@@ -1,7 +1,24 @@
 import NextLink from 'next/link'
 import Image from 'next/image'
-import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
+import {
+  Box,
+  Text,
+  LinkBox,
+  LinkOverlay,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  ModalFooter,
+  Button,
+  useColorModeValue
+} from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import { ChevronRightIcon } from '@chakra-ui/icons'
+import Paragraph from './paragraph'
 
 // For works linked to the outside
 export const GridItem = ({ children, href, title, thumbnail }) => (
@@ -23,26 +40,90 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 // For works displayed directly inside the site
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center">
-    <NextLink href={`/works/${id}`}>
-      <LinkBox cursor="pointer">
+// export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+//   <Box w="100%" textAlign="center">
+//     <NextLink href={`/works/${id}`}>
+//       <LinkBox cursor="pointer">
+//         <Image
+//           src={thumbnail}
+//           alt={title}
+//           className="grid-item-thumbnail"
+//           placeholder="blur"
+//         />
+//         <LinkOverlay href={`/works/${id}`}>
+//           <Text mt={2} fontSize={20}>
+//             {title}
+//           </Text>
+//         </LinkOverlay>
+//         <Text fontSize={14}>{children}</Text>
+//       </LinkBox>
+//     </NextLink>
+//   </Box>
+// )
+
+export const WorkGridItem = ({
+  children,
+  id,
+  title,
+  thumbnail,
+  description
+}) => {
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  return (
+    <>
+      <Box w="100%" textAlign="center" onClick={onOpen} cursor="pointer">
         <Image
           src={thumbnail}
           alt={title}
           className="grid-item-thumbnail"
           placeholder="blur"
         />
-        <LinkOverlay href={`/works/${id}`}>
-          <Text mt={2} fontSize={20}>
-            {title}
-          </Text>
-        </LinkOverlay>
+        <Text mt={2} fontSize={20}>
+          {title}
+        </Text>
         <Text fontSize={14}>{children}</Text>
-      </LinkBox>
-    </NextLink>
-  </Box>
-)
+      </Box>
+      <Modal isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent bgColor={useColorModeValue('#f0e7db', '#202023')}>
+          <ModalHeader bgColor={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>{title}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Box alignItems="center">
+            <Image
+              src={thumbnail}
+              alt={title}
+              className="grid-item-thumbnail"
+              placeholder="blur"
+            />
+            <Paragraph>
+              {description}
+            </Paragraph>
+            
+            </Box>
+            
+          </ModalBody>
+
+          <ModalFooter>
+            <Button
+              rightIcon={<ChevronRightIcon />}
+              colorScheme="teal"
+              onClick={onClose}
+              m={4}
+            >
+              Close
+            </Button>
+            <NextLink href={`/works/${id}`}>
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                Detail
+              </Button>
+            </NextLink>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
+    </>
+  )
+}
 
 export const GridItemStyle = () => (
   <Global

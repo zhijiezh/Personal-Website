@@ -20,6 +20,8 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import { GridItem } from '../components/grid-item'
 
+import Resume from '../public/Zhijie Zhao Resume.pdf'
+
 const Page = () => {
   return (
     <Layout>
@@ -110,42 +112,44 @@ const Page = () => {
         </Section>
 
         <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          On the web
-        </Heading>
-        <List>
-          <ListItem>
-            <Link href="https://github.com/zhijiezh" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoGithub} />}
+          <Heading as="h3" variant="section-title">
+            On the web
+          </Heading>
+          <List>
+            <ListItem>
+              <Link href="https://github.com/zhijiezh" target="_blank">
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoGithub} />}
+                >
+                  @zhijiezh
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="https://www.linkedin.com/in/zhijie-zhao-4bb2b81b4/"
+                target="_blank"
               >
-                @zhijiezh
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoLogoLinkedin} />}
+                >
+                  Zhijie Zhao
+                </Button>
+              </Link>
+            </ListItem>
+          </List>
+          <Box align="center" my={4}>
+            <a href={Resume} target="_blank">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+                My Resume
               </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://www.linkedin.com/in/zhijie-zhao-4bb2b81b4/" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoLinkedin} />}
-              >
-                Zhijie Zhao
-              </Button>
-            </Link>
-          </ListItem>
-        </List>
-
-        <Box align="center" my={4}>
-          <NextLink href="/works">
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My Works
-            </Button>
-          </NextLink>
-        </Box>
-      </Section>
+            </a>
+          </Box>
+        </Section>
       </Container>
     </Layout>
   )
