@@ -20,7 +20,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import { GridItem } from '../components/grid-item'
 
-import Resume from '../public/Zhijie Zhao Resume.pdf'
+const ResumeAddress = "../Zhijie-Zhao-Resume.pdf"
 
 const Page = () => {
   return (
@@ -140,7 +140,7 @@ const Page = () => {
             </ListItem>
           </List>
           <Box align="center" my={4}>
-            <a href={Resume} target="_blank">
+            <a href={ResumeAddress} target="_blank">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My Resume
               </Button>
