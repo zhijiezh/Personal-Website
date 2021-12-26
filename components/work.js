@@ -22,7 +22,7 @@ export const WorkImage = ({ src, alt }) => (
 )
 
 export const MobileWorkImage = ({ src, alt }) => (
-  <Image borderRadius="lg" w="40%" src={src} alt={alt} mb={4} />
+  <Image borderRadius="40" w="45%" src={src} alt={alt} />
 )
 
 export const Meta = ({ children }) => (
