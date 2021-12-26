@@ -31,9 +31,8 @@ const Works = () => {
               id="HumanKind"
               title="HumanKind"
               thumbnail={thumbHumanKind}
-              description={descriptionHumanKind}
             >
-              Design Project
+              {descriptionHumanKind}
             </WorkGridItem>
           </Section>
           <Section>

@@ -66,7 +66,7 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Hello, I am Zhijie Zhao, currently a student in School of Information, University of Michigan. My major is User-centered agile software development. I am learning user experience (UX) design as well as front-end development. I came from Shanghai, China. I love life and Teddy bears. Hear is one of my recent design works.{' '}
+            Hello, I am Zhijie Zhao, currently a student in School of Information, University of Michigan. My major is User-centered agile software development. I am learning user experience (UX) design as well as front-end development. I came from Shanghai, China. I love life and Teddy bears. Here is one of my recent design works.{' '}
             <NextLink href="/works/HumanKind">
               <Link>HumanKind</Link>
             </NextLink>

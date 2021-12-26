@@ -30,6 +30,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
         className="grid-item-thumbnail"
         placeholder="blur"
         loading="lazy"
+        layout="intrinsic"
       />
       <LinkOverlay href={href} target="_blank">
         <Text mt={2}>{title}</Text>
@@ -39,8 +40,32 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
+// For works displayed directly inside the site
+export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+  <Box w="100%" textAlign="center">
+    <NextLink href={`/works/${id}`}>
+      <LinkBox cursor="pointer">
+        <Image
+          src={thumbnail}
+          alt={title}
+          layout="intrinsic"
+          className="grid-item-thumbnail"
+          placeholder="blur"
+          loading="lazy"
+        />
+        <LinkOverlay href={`/works/${id}`}>
+          <Text mt={2} fontSize={20}>
+            {title}
+          </Text>
+        </LinkOverlay>
+        <Text fontSize={14}>{children}</Text>
+      </LinkBox>
+    </NextLink>
+  </Box>
+)
 
-export const WorkGridItem = ({
+
+export const WorkGridItemWithModal = ({
   children,
   id,
   title,
