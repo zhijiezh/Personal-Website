@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Navbar from '../navbar'
 import Head from 'next/head'
 import backPhoto from '../../public/images/back.jpg'
+import Footer from '../footer'
 
 const Main = ({ children, router }) => {
   return (
@@ -25,6 +26,7 @@ const Main = ({ children, router }) => {
         </Box>
         {children}
       </Container>
+      <Footer/>
     </Box>
   )
 }
