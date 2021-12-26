@@ -1,4 +1,4 @@
-import { Container, Badge, Link, List, ListItem, Box } from '@chakra-ui/react'
+import { Container, Badge, Link, List, ListItem, Box, HStack } from '@chakra-ui/react'
 import { Title, Meta, MobileWorkImage } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
@@ -45,16 +45,16 @@ const Work = () => (
           <span>Figma</span>
         </ListItem>
       </List>
-      <Box flexDir="row">
-        <MobileWorkImage
-          src="/images/works/HumanKind_01.png"
-          alt="HumanKind - Welcome Screen"
-        />
-        <MobileWorkImage
-          src="/images/works/HumanKind_02.png"
-          alt="HumanKind - Home Screen"
-        />
-      </Box>
+      <HStack alignItems={'center'} justifyContent={'space-around'}>
+          <MobileWorkImage
+            src="/images/works/HumanKind_01.png"
+            alt="HumanKind - Welcome Screen"
+          />
+          <MobileWorkImage
+            src="/images/works/HumanKind_02.png"
+            alt="HumanKind - Home Screen"
+          />
+      </HStack>
     </Container>
   </Layout>
 )
