@@ -1,6 +1,5 @@
 import { Container, Badge, Link, List, ListItem, Box, HStack } from '@chakra-ui/react'
 import { Title, Meta, MobileWorkImage } from '../../components/work'
-import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
 
@@ -10,10 +9,10 @@ const Work = () => (
       <Title>
         HumanKind <Badge>2021</Badge>
       </Title>
-      <P>
+      <Paragraph>
         A donation platform that facilitates smaller, direct donations to
         neighbors in need.
-      </P>
+      </Paragraph>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Solution Overview</Meta>
