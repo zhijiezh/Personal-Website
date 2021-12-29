@@ -1,5 +1,5 @@
 import NextLink from 'next/link'
-import { Heading, Box, Image, Link, Badge } from '@chakra-ui/react'
+import { Heading, Box, Image, Link, Badge, AspectRatio } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 
 export const Title = ({ children }) => (
@@ -29,4 +29,10 @@ export const Meta = ({ children }) => (
   <Badge colorScheme="green" mr={2}>
     {children}
   </Badge>
+)
+
+export const VideoEmbeded = ({ src }) => (
+  <AspectRatio ratio={640 / 480} mt={4}>
+    <iframe src={src} allow="autoplay"></iframe>
+  </AspectRatio>
 )

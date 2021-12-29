@@ -28,21 +28,21 @@ const Works = () => {
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
-              id="HumanKind"
-              title="HumanKind"
-              thumbnail={thumbHumanKind}
-            >
-              {descriptionHumanKind}
-            </WorkGridItem>
-          </Section>
-          <Section>
-            <WorkGridItem
               id="Wishlist"
               title="Wishlist"
               thumbnail={thumbWishlist}
             >
               An mobile app where you can creat wishlists and view your friends'
               wishlists.
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="HumanKind"
+              title="HumanKind"
+              thumbnail={thumbHumanKind}
+            >
+              {descriptionHumanKind}
             </WorkGridItem>
           </Section>
           <Section>
