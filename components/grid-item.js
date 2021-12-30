@@ -14,36 +14,60 @@ import {
   ModalBody,
   ModalFooter,
   Button,
-  useColorModeValue
+  useColorModeValue,
+  Badge
 } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from './paragraph'
+import styled from '@emotion/styled'
+
+const GridBox = styled.span`
+  div {
+    transition: transform 0.15s ease;
+  }
+  .code {
+    color: #88ccca00;
+    transition: color 0.15s ease-out;
+  }
+  &:hover div {
+    transform: scale(1.03);
+  }
+  &:hover .code{
+    color: #88ccca;
+  }
+`
 
 // For works linked to the outside
-export const GridItem = ({ children, href, title, thumbnail }) => (
+export const GridItem = ({ children, href, title, thumbnail, category }) => (
   <Box w="100%" textAlign="center">
-    <LinkBox cursor="pointer">
-      <Image
-        src={thumbnail}
-        alt={title}
-        className="grid-item-thumbnail"
-        placeholder="blur"
-        loading="lazy"
-        layout="intrinsic"
-      />
-      <LinkOverlay href={href} target="_blank">
-        <Text mt={2}>{title}</Text>
-      </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
-    </LinkBox>
+    <GridBox>
+      <LinkBox cursor="pointer">
+        <Image
+          src={thumbnail}
+          alt={title}
+          className="grid-item-thumbnail"
+          placeholder="blur"
+          loading="lazy"
+          layout="intrinsic"
+        />
+        <LinkOverlay href={href} target="_blank">
+          <Text mt={2} fontSize={20}>
+          <span className="code">&lt; </span>{title}<span className="code"> &#47;&gt;</span>
+          </Text>
+        </LinkOverlay>
+        <Text fontSize={14}>{children}</Text>
+        <Badge className='code' variant='outline' boxShadow='none'>{category}</Badge>
+      </LinkBox>
+    </GridBox>
   </Box>
 )
 
 // For works displayed directly inside the site
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const WorkGridItem = ({ children, id, title, thumbnail, category }) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`}>
+    <GridBox>
       <LinkBox cursor="pointer">
         <Image
           src={thumbnail}
@@ -55,22 +79,24 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
         />
         <LinkOverlay href={`/works/${id}`}>
           <Text mt={2} fontSize={20}>
-            {title}
+          <span className="code">&lt; </span>{title}<span className="code"> &#47;&gt;</span>
           </Text>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
+        <Badge className='code' variant='outline' boxShadow='none'>{category}</Badge>
       </LinkBox>
+      </GridBox>
     </NextLink>
   </Box>
 )
-
 
 export const WorkGridItemWithModal = ({
   children,
   id,
   title,
   thumbnail,
-  description
+  description,
+  category
 }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
@@ -90,22 +116,22 @@ export const WorkGridItemWithModal = ({
       <Modal isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent bgColor={useColorModeValue('#f0e7db', '#202023')}>
-          <ModalHeader bgColor={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}>{title}</ModalHeader>
+          <ModalHeader
+            bgColor={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+          >
+            {title}
+          </ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Box alignItems="center">
-            <Image
-              src={thumbnail}
-              alt={title}
-              className="grid-item-thumbnail"
-              placeholder="blur"
-            />
-            <Paragraph>
-              {description}
-            </Paragraph>
-            
+              <Image
+                src={thumbnail}
+                alt={title}
+                className="grid-item-thumbnail"
+                placeholder="blur"
+              />
+              <Paragraph>{description}</Paragraph>
             </Box>
-            
           </ModalBody>
 
           <ModalFooter>
