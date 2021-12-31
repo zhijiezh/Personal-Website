@@ -33,7 +33,7 @@ const Works = () => {
               thumbnail={thumbWishlist}
               category="Front-end"
             >
-              An mobile app where you can creat wishlists and view your friends'
+              A mobile app where you can creat wishlists and view your friends'
               wishlists.
             </WorkGridItem>
           </Section>
