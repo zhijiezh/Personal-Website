@@ -28,7 +28,7 @@ const Work = () => (
         <Badge>2021</Badge>
       </Title>
       <Paragraph>
-        In this data visualization object, I focus on communicative
+        In this data visualization project, I focus on communicative
         visualization. I designed visualization to accompany the article{' '}
         <Link href={articleLink} isExternal>
           I called this place 'Americas worst place to live.' Then I went there.{' '}
