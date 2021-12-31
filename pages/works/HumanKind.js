@@ -1,7 +1,10 @@
 import { Container, Badge, Link, List, ListItem, Box, HStack } from '@chakra-ui/react'
-import { Title, Meta, MobileWorkImage } from '../../components/work'
+import { Title, Meta, MobileWorkImage, VideoEmbeded } from '../../components/work'
 import Layout from '../../components/layouts/article'
 import Paragraph from '../../components/paragraph'
+
+const demoLink =
+  'https://drive.google.com/file/d/1S_qsXbD6uURNKjSlJddzwdGnWjbGSxK4/preview'
 
 const Work = () => (
   <Layout title="HumanKind">
@@ -54,6 +57,10 @@ const Work = () => (
             alt="HumanKind - Home Screen"
           />
       </HStack>
+      <Box mt={4}>
+        <Meta>Demo</Meta>
+        <VideoEmbeded src={demoLink}></VideoEmbeded>
+      </Box>
     </Container>
   </Layout>
 )
