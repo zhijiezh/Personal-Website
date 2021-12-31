@@ -33,7 +33,7 @@ const Page = () => {
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          Hello, I &apos;m a master's student seeking for a SDE Internship (Summer 2022)
+          Hello, I&apos;m a master's student seeking an SDE Internship (Summer 2022)
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -66,7 +66,7 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            Hello, I am Zhijie Zhao, currently a student in School of Information, University of Michigan. My major is Information Science and I am focusing on User-centered agile software development, which involves both user experience (UX) design and front-end development. My hometown is Shanghai, China. I love life and Teddy bears. Here is one of my recent front-end works:{' '}
+            Hello, I am Zhijie Zhao, currently a student at the School of Information, University of Michigan. My major is Information Science, and I am focusing on User-centered agile software development, which involves both user experience (UX) design and front-end development. My hometown is Shanghai, China. I love life and Teddy bears. Here is one of my recent front-end works:{' '}
             <NextLink href="/works/Wishlist">
               <Link>Wishlist</Link>
             </NextLink>

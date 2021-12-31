@@ -31,11 +31,11 @@ const Work = () => (
         In this data visualization project, I focus on communicative
         visualization. I designed visualization to accompany the article{' '}
         <Link href={articleLink} isExternal>
-          I called this place 'Americas worst place to live.' Then I went there.{' '}
+          I called this place 'Americas worst place to live.' Then I went there.
           <ExternalLinkIcon mx="2px" />
         </Link>{' '}
         I created both a static data visualization poster and an interactive
-        website. In the project you will see data visualizations for the
+        website. In the project, you will see data visualizations for the
         following topics:
       </Paragraph>
       <UnorderedList>
@@ -49,7 +49,7 @@ const Work = () => (
       <Paragraph>
         I also used a parallel coordinates graph to implement a playground where
         readers can explore the pattern hidden inside the data by themselves.
-        This is also called a Martini Glass Infographics Structure.
+        It is also called a Martini Glass Infographics Structure.
       </Paragraph>
       <List ml={4} my={4}>
         <ListItem>

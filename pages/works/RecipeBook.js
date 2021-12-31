@@ -14,11 +14,11 @@ const Work = () => (
         Recipe Book <Badge>2021</Badge>
       </Title>
       <Paragraph>
-         This is an AngularJS project that implement a recipe book where user can create and save their own recipes. They can also add the ingredients to their shopping carts.
+      Here is an Angular project that implements a recipe book where users can create and save recipes. They can also add the ingredients to their shopping carts.
       </Paragraph>
       <UnorderedList mt={4}>
         <ListItem>Support login and signup through Firebase.</ListItem>
-        <ListItem>Create, update, delete and edit your own recipes.</ListItem>
+        <ListItem>Create, update, delete and edit your recipes.</ListItem>
         <ListItem>Add ingredients into your shopping cart.</ListItem>
         <ListItem>Using NgRx to support data storage.</ListItem>
       </UnorderedList>

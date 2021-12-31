@@ -47,23 +47,28 @@ const Work = () => (
         and prepare the ideal gift for him.
       </Paragraph>
       <Paragraph>
-        Our ideal users are people who are preparing a gift for a specific
-        person. The main problem they face is that they do not precisely know
-        what the receiver wants. In our app, we will allow users to post their
-        wishlists. Their friends can see those wishlists and choose the items on
-        the list. The item will be removed from the list after one of their
-        friends picks so that so that people won&apos;t buy the same thing. Of
-        course, the receiver will not know who selects the item for him. In this
-        way, users do not need to choose gifts, and people can always get what
-        they want most. <strong>Wishlist</strong> will save the giver&apos;s
-        time and the receiver&apos;s money (so that he won&apos;t have to buy
-        the thing he wants on his own).
+        Our ideal users are preparing a gift for a specific person. The main
+        problem they face is that they do not precisely know what the receiver
+        wants. In our app, we will allow users to post their wishlists. Their
+        friends can see those wishlists and choose the items on the list. The
+        item will be removed from the list after one of their friends picks so
+        that people won't buy the same thing. Of course, the receiver will not
+        know who selects the item for him. In this way, users do not need to
+        choose gifts, and people can always get what they want most.{' '}
+        <strong>Wishlist</strong> will save the giver's time and the receiver's
+        money (so that he won't have to buy the thing he wants on his own).
       </Paragraph>
       <UnorderedList mt={4}>
-        <ListItem>Add friends through email address, see your friends' wishlist and claim their wishes.</ListItem>
+        <ListItem>
+          Add friends through email address, see your friends' wishlist and
+          claim their wishes.
+        </ListItem>
         <ListItem>Create, update, delete and edit your own wishlist.</ListItem>
         <ListItem>Complete and discard claimed wishes.</ListItem>
-        <ListItem>Support authorization, form control, loading control, toast notification and swipelist.</ListItem>
+        <ListItem>
+          Support authorization, form control, loading control, toast
+          notification, and swipelist.
+        </ListItem>
       </UnorderedList>
       <List ml={4} my={4}>
         <ListItem>
