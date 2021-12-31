@@ -13,7 +13,7 @@ import {
   SimpleGrid
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
-import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoGithub, IoLogoLinkedin, IoMail } from 'react-icons/io5'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
@@ -135,6 +135,35 @@ const Page = () => {
                   leftIcon={<Icon as={IoLogoLinkedin} />}
                 >
                   Zhijie Zhao
+                </Button>
+              </Link>
+              
+            </ListItem>
+            <ListItem>
+              <Link
+                href="mailto:jerry_shh@hotmail.com"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoMail} />}
+                >
+                  jerry_shh@hotmail.com
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="mailto:zhijiezh@umich.edu"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoMail} />}
+                >
+                  zhijiezh@umich.edu
                 </Button>
               </Link>
             </ListItem>
