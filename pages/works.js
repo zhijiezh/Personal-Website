@@ -18,6 +18,8 @@ import thumbRedLakeCounty from '../public/images/works/RedLakeCounty.png'
 const descriptionHumanKind =
   'A donation platform that facilitates smaller, direct donations to neighbors in need. '
 
+const categoryList = ['Front-end', 'UX Design', 'Data Vis']
+
 const Works = () => {
   return (
     <Layout>
@@ -31,7 +33,7 @@ const Works = () => {
               id="Wishlist"
               title="Wishlist"
               thumbnail={thumbWishlist}
-              category="Front-end"
+              category={categoryList[0]}
             >
               A mobile app where you can creat wishlists and view your friends'
               wishlists.
@@ -42,7 +44,7 @@ const Works = () => {
               id="HumanKind"
               title="HumanKind"
               thumbnail={thumbHumanKind}
-              category="UX Design"
+              category={categoryList[1]}
             >
               {descriptionHumanKind}
             </WorkGridItem>
@@ -52,7 +54,7 @@ const Works = () => {
               id="RecipeBook"
               title="Recipe Book"
               thumbnail={thumbRecipeBook}
-              category="Front-end"
+              category={categoryList[0]}
             >
               A recipe book website that holds your recipes.
             </WorkGridItem>
@@ -62,7 +64,7 @@ const Works = () => {
               id="RedLakeCounty"
               title="Red Lake County is not perfect but definitely not the worse"
               thumbnail={thumbRedLakeCounty}
-              category="Data Vis"
+              category={categoryList[2]}
             >
               Data visualization for the critique on Red Lake County.
             </WorkGridItem>
@@ -73,7 +75,7 @@ const Works = () => {
               href="https://codepen.io/zhijiezh/full/mdOgjGm"
               title="Tic Tac Toe"
               thumbnail={thumbTicTacToe}
-              category="Front-end"
+              category={categoryList[0]}
             >
               React Tutorial with extra improvements
             </GridItem>
@@ -84,7 +86,7 @@ const Works = () => {
               href="https://codepen.io/zhijiezh/full/yLVjLWd"
               title="Random Quote Machine"
               thumbnail={thumbRandomQuoteMachine}
-              category="Front-end"
+              category={categoryList[0]}
             >
               Little cards that inspires your day
             </GridItem>
@@ -95,7 +97,7 @@ const Works = () => {
               href="https://codepen.io/zhijiezh/full/PobdaxV"
               title="Build a Drum Machine"
               thumbnail={thumbDrumMachine}
-              category="Front-end"
+              category={categoryList[0]}
             >
               Drum simulator that brings rhythm everywhere
             </GridItem>
@@ -106,7 +108,7 @@ const Works = () => {
               href="https://codepen.io/zhijiezh/full/xxRjMXz"
               title="Markdown Previewer"
               thumbnail={thumbMarkdownPreviewer}
-              category="Front-end"
+              category={categoryList[0]}
             >
               Display your markdown!
             </GridItem>
@@ -117,7 +119,7 @@ const Works = () => {
               href="https://codepen.io/zhijiezh/full/BaQGrjv"
               title="JavaScript Calculator"
               thumbnail={thumbJavaScriptCalculator}
-              category="Front-end"
+              category={categoryList[0]}
             >
               Just a calculator that looks better
             </GridItem>
@@ -128,7 +130,7 @@ const Works = () => {
               href="https://codepen.io/zhijiezh/full/vYybNEZ"
               title="Pomodoro Timer"
               thumbnail={thumbPomodoroTimer}
-              category="Front-end"
+              category={categoryList[0]}
             >
               The 25 + 5 timer that boosts your efficiency
             </GridItem>
