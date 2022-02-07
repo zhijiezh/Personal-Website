@@ -23,13 +23,15 @@ import Paragraph from '../../components/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Unity, { UnityContext } from 'react-unity-webgl'
 
-
 const unityContext = new UnityContext({
   loaderUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.loader.js',
   dataUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.data',
   frameworkUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.framework.js',
   codeUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.wasm'
 })
+
+const WindowsZeldaLink = '../ZeldaBuild/Zelda - zhijiezh - windows.zip'
+const MacZeldaLink = '../ZeldaBuild/Zelda - zhijiezh - mac.zip'
 
 const Work = () => (
   <Layout title="Zelda">
@@ -56,6 +58,18 @@ const Work = () => (
               unityContext={unityContext}
             />
           </Box>
+        </ListItem>
+        <ListItem>
+          <Meta>Game Build</Meta>
+          <Link href={WindowsZeldaLink} isExternal>
+            Windows Game Build <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Meta>Game Build</Meta>
+          <Link href={MacZeldaLink} isExternal>
+            Mac Game Build <ExternalLinkIcon mx="2px" />
+          </Link>
         </ListItem>
       </List>
       <Paragraph>
