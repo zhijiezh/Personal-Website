@@ -23,17 +23,12 @@ import Paragraph from '../../components/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Unity, { UnityContext } from 'react-unity-webgl'
 
-const repoLink =
-  'https://github.com/SI669-Classroom-Fall-2021/si-669-final-project-makersmelx'
-
-const demoLink =
-  'https://drive.google.com/file/d/1J_Q34Z9XYR7ui8vmBsagrx-qOhrM3Mb3/preview'
 
 const unityContext = new UnityContext({
-  loaderUrl: '../build/Legend of Zelda - Zhaos.loader.js',
-  dataUrl: '../build/Legend of Zelda - Zhaos.data',
-  frameworkUrl: '../build/Legend of Zelda - Zhaos.framework.js',
-  codeUrl: '../build/Legend of Zelda - Zhaos.wasm'
+  loaderUrl: '../build/theLegendOfZelda-Zhaos.loader.js',
+  dataUrl: '../build/theLegendOfZelda-Zhaos.data',
+  frameworkUrl: '../build/theLegendOfZelda-Zhaos.framework.js',
+  codeUrl: '../build/theLegendOfZelda-Zhaos.wasm'
 })
 
 const Work = () => (
