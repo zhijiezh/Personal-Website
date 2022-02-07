@@ -25,10 +25,10 @@ import Unity, { UnityContext } from 'react-unity-webgl'
 
 
 const unityContext = new UnityContext({
-  loaderUrl: '../build/theLegendOfZelda-Zhaos.loader.js',
-  dataUrl: '../build/theLegendOfZelda-Zhaos.data',
-  frameworkUrl: '../build/theLegendOfZelda-Zhaos.framework.js',
-  codeUrl: '../build/theLegendOfZelda-Zhaos.wasm'
+  loaderUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.loader.js',
+  dataUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.data',
+  frameworkUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.framework.js',
+  codeUrl: '../ZeldaBuild/theLegendOfZelda-Zhaos.wasm'
 })
 
 const Work = () => (
