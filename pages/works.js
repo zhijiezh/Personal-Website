@@ -18,7 +18,7 @@ import thumbRedLakeCounty from '../public/images/works/RedLakeCounty.png'
 const descriptionHumanKind =
   'A donation platform that facilitates smaller, direct donations to neighbors in need. '
 
-const categoryList = ['Front-end', 'UX Design', 'Data Vis']
+const categoryList = ['Front-end', 'UX Design', 'Data Vis', 'Game Design']
 
 const Works = () => {
   return (
@@ -28,6 +28,16 @@ const Works = () => {
           Works
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+        <Section>
+            <WorkGridItem
+              id="Zelda"
+              title="Zelda"
+              thumbnail={thumbWishlist}
+              category={categoryList[3]}
+            >
+              A simple Unity NES game.
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem
               id="Wishlist"
