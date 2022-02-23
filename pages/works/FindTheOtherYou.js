@@ -30,8 +30,8 @@ const unityContext = new UnityContext({
   codeUrl: '../findTheOtherYouBuild/findTheOtherYou.wasm'
 })
 
-const WindowsYouLink = '../findTheOtherYouBuild/findTheOtherYou- gold spike - Windows Build.zip'
-const MacYouLink = '../findTheOtherYouBuild/findTheOtherYou- gold spike - Mac Build.zip'
+const WindowsYouLink = '../findTheOtherYouBuild/findTheOtherYou - Windows Build.zip'
+const MacYouLink = '../findTheOtherYouBuild/findTheOtherYou - Mac Build.zip'
 
 const Work = () => (
   <Layout title="findTheOtherYou">
