@@ -15,6 +15,7 @@ import thumbWishlist from '../public/images/works/Wishlist.png'
 import thumbRecipeBook from '../public/images/works/RecipeBook.png'
 import thumbRedLakeCounty from '../public/images/works/RedLakeCounty.png'
 import thumbZelda from '../public/images/works/Zelda.png'
+import thumbFindTheOtherYou from '../public/images/works/FindTheOtherYou.png'
 
 const descriptionHumanKind =
   'A donation platform that facilitates smaller, direct donations to neighbors in need. '
@@ -29,14 +30,24 @@ const Works = () => {
           Works
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
+          <Section>
+            <WorkGridItem
+              id="FindTheOtherYou"
+              title="Find The Other You"
+              thumbnail={thumbFindTheOtherYou}
+              category={categoryList[3]}
+            >
+              A puzzle/explore game made with Unity.
+            </WorkGridItem>
+          </Section>
+          <Section>
             <WorkGridItem
               id="Zelda"
               title="Zelda"
               thumbnail={thumbZelda}
               category={categoryList[3]}
             >
-              A simple Unity NES game.
+              A simple NES game simulation made with Unity.
             </WorkGridItem>
           </Section>
           <Section>
