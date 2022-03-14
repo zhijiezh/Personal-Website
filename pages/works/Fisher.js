@@ -37,7 +37,7 @@ const Work = () => (
   <Layout title="Fisher">
     <Container>
       <Title>
-        Find the other you <Badge>2022</Badge>
+        Fisher <Badge>2022</Badge>
       </Title>
       <List ml={4} my={4}>
         <ListItem>
