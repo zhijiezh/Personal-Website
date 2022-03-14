@@ -48,7 +48,7 @@ const Work = () => (
           <Meta>Demo</Meta>
           <Box mt={4}>
             <Unity
-              style={{ width: '480px', height: '360px' }}
+              style={{ width: '960px', height: '720px' }}
               unityContext={unityContext}
             />
           </Box>
