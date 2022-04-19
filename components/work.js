@@ -1,6 +1,7 @@
 import NextLink from 'next/link'
 import { Heading, Box, Image, Link, Badge, AspectRatio } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import PropTypes from "prop-types";
 
 export const Title = ({ children }) => (
   <Box>
@@ -33,6 +34,15 @@ export const Meta = ({ children }) => (
 
 export const VideoEmbeded = ({ src }) => (
   <AspectRatio ratio={640 / 480} mt={4}>
-    <iframe src={src} allow="autoplay"></iframe>
+    <iframe
+      src={src}
+      frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    ></iframe>
   </AspectRatio>
 )
+
+VideoEmbeded.propTypes = {
+  embedId: PropTypes.string.isRequired
+};

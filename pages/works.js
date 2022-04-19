@@ -16,6 +16,7 @@ import thumbRecipeBook from '../public/images/works/RecipeBook.png'
 import thumbRedLakeCounty from '../public/images/works/RedLakeCounty.png'
 import thumbZelda from '../public/images/works/Zelda.png'
 import thumbFindTheOtherYou from '../public/images/works/FindTheOtherYou.png'
+import thumbSteinsFishingTale from '../public/images/works/SteinsFishingTale.png'
 
 const descriptionHumanKind =
   'A donation platform that facilitates smaller, direct donations to neighbors in need. '
@@ -30,6 +31,16 @@ const Works = () => {
           Works
         </Heading>
         <SimpleGrid columns={[1, 1, 2]} gap={6}>
+          <Section>
+            <WorkGridItem
+              id="SteinsFishingTale"
+              title="Stein's Fishing Tale"
+              thumbnail={thumbSteinsFishingTale}
+              category={categoryList[3]}
+            >
+              A little fishing game at the end of the world.
+            </WorkGridItem>
+          </Section>
           <Section>
             <WorkGridItem
               id="FindTheOtherYou"
