@@ -23,18 +23,12 @@ import Paragraph from '../../components/paragraph'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import Unity, { UnityContext } from 'react-unity-webgl'
 
-const unityContext = new UnityContext({
-  loaderUrl: '../SteinsFishingTaleBuild/Web Build.loader.js',
-  dataUrl:  '../SteinsFishingTaleBuild/Web Build.data',
-  frameworkUrl:  '../SteinsFishingTaleBuild/Web Build.framework.js',
-  codeUrl:  '../SteinsFishingTaleBuild/Web Build.wasm',
-})
 
 const WindowsYouLink = '../SteinsFishingTaleBuild/Stein\'s Fishing Tale - Mac Build.zip'
 const MacYouLink = '../SteinsFishingTaleBuild/Stein\'s Fishing Tale - Windows Build.zip'
 const itchioLink = 'https://zhijiezh.itch.io/steins-fishing-tale'
 const gamejoltLink = 'https://gamejolt.com/games/steins-fishing-tale/710567'
-const webGLLink = 'https://gamejolt.net/?token=viqTVR2XZoH5W62uDdd6b6FgsiNzgz'
+const webGLLink = '../SteinsFishingTaleBuild/Web%20Build/index.html'
 
 const Work = () => (
   <Layout title="Stein's Fishing Tale">

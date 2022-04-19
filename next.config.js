@@ -11,5 +11,13 @@ module.exports = {
       },
     });
     return config;
-  }
+  },
+  rewrites: async () => {
+    return [
+      {
+        source: "/public/SteinsFishingTaleBuild/Web Build/index.html",
+        destination: "/pages/api/SteinsFishingTale.js",
+      }
+    ]
+}
 }

@@ -43,6 +43,3 @@ export const VideoEmbeded = ({ src }) => (
   </AspectRatio>
 )
 
-VideoEmbeded.propTypes = {
-  embedId: PropTypes.string.isRequired
-};
