@@ -33,7 +33,7 @@ const Page = () => {
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          Hello, I&apos;m a master's student seeking an SDE Internship (Summer 2022)
+          Hello, I&apos;m a master's student seeking an new grad software development engineer job (Graduate Dec 2022)
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
@@ -164,6 +164,20 @@ const Page = () => {
                   leftIcon={<Icon as={IoMail} />}
                 >
                   zhijiezh@umich.edu
+                </Button>
+              </Link>
+            </ListItem>
+            <ListItem>
+              <Link
+                href="mailto:zhijiezhshh@gmail.com"
+                target="_blank"
+              >
+                <Button
+                  variant="ghost"
+                  colorScheme="teal"
+                  leftIcon={<Icon as={IoMail} />}
+                >
+                  zhijiezhshh@gmail.com
                 </Button>
               </Link>
             </ListItem>
