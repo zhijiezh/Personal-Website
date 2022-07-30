@@ -20,7 +20,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import { GridItem } from '../components/grid-item'
 
-const ResumeAddress = "../Zhijie-Zhao-Resume.pdf"
+const ResumeAddress = "../Zhijie-Zhao-Resume-SDE-NG-2023.pdf"
 
 const Page = () => {
   return (
