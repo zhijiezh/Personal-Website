@@ -33,7 +33,7 @@ const Page = () => {
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         >
-          Hello, I&apos;m a master's student seeking an new grad software development engineer job (Graduate Dec 2022)
+          Hello, I&apos;m a master's student seeking an new grad software development engineer job
         </Box>
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
